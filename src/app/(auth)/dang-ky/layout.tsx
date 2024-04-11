@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { AntdRegistry } from '@ant-design/nextjs-registry';
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "@/app/globals.css";
+import "./style.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Đọc truyện Online",
+  title: "Đăng ký - Đọc truyện Online",
   description: "Đọc miễn phí truyện",
 };
 
