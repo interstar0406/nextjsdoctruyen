@@ -2,15 +2,20 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "21.x"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prettier": "prettier --write ."
   },
   "dependencies": {
     "@ant-design/nextjs-registry": "^1.0.0",
     "antd": "^5.16.1",
+    "mongoose": "^8.3.1",
     "next": "14.1.4",
     "react": "^18",
     "react-dom": "^18"
@@ -23,6 +28,7 @@
     "eslint": "^8",
     "eslint-config-next": "14.1.4",
     "postcss": "^8",
+    "prettier": "^3.2.5",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
   }

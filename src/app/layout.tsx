@@ -1,25 +1,25 @@
 import type { Metadata } from "next";
 import { AntdRegistry } from '@ant-design/nextjs-registry';
 import { Inter } from "next/font/google";
-import "./globals.css";
+import '@/assets/css/globals.css';
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Đọc truyện Online",
-  description: "Đọc miễn phí truyện",
+	title: "Đọc truyện Online",
+	description: "Đọc miễn phí truyện",
 };
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
-  return (
-    <html lang="vn-VI">
-      <body className={inter.className}>
-        <AntdRegistry>{children}</AntdRegistry>
-      </body>
-    </html>
-  );
+	return (
+		<html lang="vn-VI">
+			<body className={inter.className}>
+				<AntdRegistry>{children}</AntdRegistry>
+			</body>
+		</html>
+	);
 }

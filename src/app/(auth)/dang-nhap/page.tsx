@@ -10,6 +10,7 @@ import {
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import type { CheckboxProps, FormProps } from 'antd';
+import '@/index'
 
 const App = () => {
   const route = useRouter();
